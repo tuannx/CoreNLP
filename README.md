@@ -113,7 +113,7 @@ Questions about CoreNLP can either be posted on StackOverflow with the tag [stan
 
 ### Architecture Governance with arcade-agent
 
-This repository uses [arcade-agent](https://github.com/lemduc/arcade-agent) for automated architectural analysis, drift tracking, and rule validation:
+This repository uses [arcade-agent](https://github.com/arcade-agent/arcade-agent) for automated architectural analysis, drift tracking, and rule validation:
 
 - **Baseline Architecture**: Recorded in `.arcade/baseline.json`.
 - **Architecture Rules**: Configured in `.arcade-rules.json`.
