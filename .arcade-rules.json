@@ -1,0 +1,35 @@
+{
+  "$comment": "Architecture rules for Stanford CoreNLP validated by arcade-agent",
+  "rules": [
+    {
+      "name": "modularity-floor-turbomq",
+      "type": "metric-gate",
+      "metric": "TurboMQ",
+      "min": 10.0
+    },
+    {
+      "name": "util-must-not-depend-on-sentiment",
+      "type": "forbidden-dependency",
+      "from": "Util",
+      "to": "Sentiment"
+    },
+    {
+      "name": "util-must-not-depend-on-quoteattribution",
+      "type": "forbidden-dependency",
+      "from": "Util",
+      "to": "Quoteattribution"
+    },
+    {
+      "name": "util-must-not-depend-on-scenegraph",
+      "type": "forbidden-dependency",
+      "from": "Util",
+      "to": "Scenegraph"
+    },
+    {
+      "name": "io-must-not-depend-on-parser",
+      "type": "forbidden-dependency",
+      "from": "Io",
+      "to": "Parser"
+    }
+  ]
+}

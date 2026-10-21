@@ -110,3 +110,16 @@ For information about making contributions to Stanford CoreNLP, see the file [CO
 
 Questions about CoreNLP can either be posted on StackOverflow with the tag [stanford-nlp](http://stackoverflow.com/questions/tagged/stanford-nlp),
   or on the [mailing lists](https://nlp.stanford.edu/software/#Mail).
+
+### Architecture Governance with arcade-agent
+
+This repository uses [arcade-agent](https://github.com/lemduc/arcade-agent) for automated architectural analysis, drift tracking, and rule validation:
+
+- **Baseline Architecture**: Recorded in `.arcade/baseline.json`.
+- **Architecture Rules**: Configured in `.arcade-rules.json`.
+- **Local Verification**:
+  ```bash
+  ./scripts/arcade-check.sh
+  ```
+- **CI Enforcement**: Automated workflow in `.github/workflows/architecture.yml` guards against architectural drift and rule violations on every PR.
+

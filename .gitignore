@@ -19,3 +19,9 @@ classes/**
 
 # generated javadoc
 javadoc/**
+
+# arcade-agent artifacts
+arcade-report/
+.arcade-cache/
+**/.arcade-cache/
+
