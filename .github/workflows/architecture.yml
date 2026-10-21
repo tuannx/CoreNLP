@@ -28,7 +28,7 @@ jobs:
       - name: Install arcade-agent
         run: |
           python -m pip install --upgrade pip
-          python -m pip install "git+https://github.com/lemduc/arcade-agent.git#egg=arcade-agent[languages]"
+          python -m pip install "git+https://github.com/arcade-agent/arcade-agent.git#egg=arcade-agent[languages]"
 
       - name: Run Architecture Drift Detection
         id: drift
@@ -40,7 +40,7 @@ jobs:
       - name: Checkout arcade-analyze Skill for Validation
         uses: actions/checkout@v4
         with:
-          repository: lemduc/arcade-analyze-skill
+          repository: arcade-agent/arcade-analyze-skill
           path: .arcade-skill
 
       - name: Validate Architecture Rules

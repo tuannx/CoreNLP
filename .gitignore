@@ -25,3 +25,7 @@ arcade-report/
 .arcade-cache/
 **/.arcade-cache/
 
+# Maven build directory
+target/
+
+
